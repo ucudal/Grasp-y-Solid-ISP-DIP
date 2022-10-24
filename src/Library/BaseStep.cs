@@ -7,7 +7,7 @@
 namespace Full_GRASP_And_SOLID
 {
     // Agreada por OCP
-    public abstract class BaseStep
+    public abstract class BaseStep : IPrintableText
     {
         public BaseStep(int time)
         {
@@ -19,5 +19,6 @@ namespace Full_GRASP_And_SOLID
         public abstract double GetStepCost();
 
         public abstract string GetTextToPrint();
+        
     }
 }
